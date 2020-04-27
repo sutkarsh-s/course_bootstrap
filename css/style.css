@@ -2,6 +2,7 @@
 {
   margin: 0px auto;
   padding: 0px auto;
+
 }
 .row-content
 {
@@ -22,9 +23,18 @@
   padding: 70px 30px;
   margin:0px auto;
   color: floralwhite;
+  background-color:#9575CD;
 }
 .address{
   font-size:80%;
   margin:0px;
   color:#0f0f0f;
+}
+body{
+  padding:50px;
+  z-index:0;
+}
+.navbar-dark
+{
+  background-color: #512DAB;
 }
