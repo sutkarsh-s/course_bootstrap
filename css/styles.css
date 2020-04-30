@@ -12,7 +12,7 @@
   min-height: 400px;
 
 }
-.footer
+.row-footer
 {
   background-color: #D1C4E9;
   marign:0px auto;
@@ -59,4 +59,10 @@ background: #512DAB
   top: 0;
   left: 0;
   min-height: 300px;
+}
+#carouselButton
+{
+  right:0px;
+  position: absolute;
+  bottom:0px;
 }
