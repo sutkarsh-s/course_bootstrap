@@ -28,7 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="./Contactus.html"><span class="fa fa-address-card fa-lg"></span>Contat</a></li>
         </ul>
         <span class="navbar-text">
-          <a data-toggle="modal" data-target="#loginModal">
+          <a id="login">
             <span class="fa fa-sign-in">Login</span>
           </a>
         </span>
@@ -108,12 +108,12 @@
     </div>
   </div>
   </div>
-  <div id="loginModal" class="modal fade" role="dialog">
+  <div id="LoginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">Login </h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <button type="button" class="close" data-dismiss="modal" id="dismiss">&times;</button>
         </div>
         <div class="modal-body">
           <form>
@@ -156,7 +156,7 @@
           <img src="img/logo.png" class="img-fluid">
         </div>
         <div class="col-12 col-sm align-self-center">
-          <a class="btn btn-warning btn-block nav-link" data-toggle="modal" data-target="#ReserveModal" role="button">Reserve Table</a>
+          <button type="button" class="btn btn-warning btn-block nav-link" id="reserve">Reserve Table</button>
         </div>
       </div>
     </div>
@@ -262,7 +262,7 @@
   </div>
 
 
-    <footer class="row-footer">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-4 offset-1 col-sm-2">
@@ -322,6 +322,14 @@
                $("#carouselButton").children("span").addClass('fa-pause');
            }
        });
+       $('#reserve').click(function()
+     {
+       $('#ReserveModal').modal();
+     });
+     $('#login').click(function()
+   {
+     $('#LoginModal').modal();
+   });
      });
      </script>
 </body>
