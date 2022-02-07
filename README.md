@@ -1,1 +1,1 @@
-# repository for course offered by courseera 
+# repository for course offered by coursera 
